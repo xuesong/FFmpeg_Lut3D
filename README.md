@@ -7,8 +7,20 @@
 # after
 ![image](https://github.com/cpuimage/Lut3D/blob/master/example/out.jpg)
 
-# Donating
+# 命令行参数:
 
-If you found this project useful, consider buying me a coffee
+lut3d 3d预设文件  图片路径
 
-<a href="https://www.buymeacoffee.com/gaozhihan" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/black_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+例如: lut3d ../god.cube ../sample.jpg
+
+用cmake即可进行编译示例代码，详情见CMakeLists.txt。
+
+# 3d lut 的实现算法
+
+[Nearest_interpolation](https://en.wikipedia.org/wiki/Nearest-neighbor_interpolation)
+
+[Trilinear_interpolation](https://en.wikipedia.org/wiki/Trilinear_interpolation)
+
+[Tetrahedral interpolation](https://www.filmlight.ltd.uk/pdf/whitepapers/FL-TL-TN-0057-SoftwareLib.pdf)
+
+Trilinear_interpolation 是用得最广泛的一种
